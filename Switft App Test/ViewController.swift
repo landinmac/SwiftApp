@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         print("First Button Tapped")
         tapCount = tapCount + 1
         print(tapCount)
-        if tapCount >= 10 {
+        if tapCount >= 20 {
             theLabel.text = "You did it!"
         }
     }
