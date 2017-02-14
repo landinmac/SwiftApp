@@ -12,19 +12,24 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var theLabel: UILabel!
     
-    var tapCount = 0
     
     @IBAction func buttonTapped(_ sender: Any) {
-        theLabel.text = "Hey!"
-        print("First Button Tapped")
-        tapCount = tapCount + 1
-        print(tapCount)
-        if tapCount >= 20 {
-            theLabel.text = "You did it!"
-        }
-    }
-    // Testing
+        
+   
+        print(Text1.text!)
+        print(Text2.text!)
+        
+        
+        
+        theLabel.text = "Answer is ... \(Double(Text1.text!)! + Double(Text2.text!)!)"
 
+    
+    }
+
+    @IBOutlet weak var Text1: UITextField!
+    
+    @IBOutlet weak var Text2: UITextField!
+    
     @IBAction func button2Tapped(_ sender: Any) {
         theLabel.text = "Stop That!"
     }
